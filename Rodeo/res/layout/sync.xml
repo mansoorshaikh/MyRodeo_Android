@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/innerbg"
+    android:paddingBottom="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/HeaderrelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header1"
+        android:gravity="clip_vertical" >
+
+        <TextView
+            android:id="@+id/Sync_Title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Rodeos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/Sync_Back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Sync"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HeaderrelativeLayout"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/Sync_Search_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@+id/Sync_Search_button"
+            android:background="@drawable/round_bg"
+            android:drawableRight="@drawable/search"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/Sync_Search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="Search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/Sync_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#BDDEF9"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="#CEE8FD" >
+    </ListView>
+
+</RelativeLayout>

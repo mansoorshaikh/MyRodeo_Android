@@ -1,0 +1,32 @@
+"Getting Started"
+                                 
+Create a Rodeo  
+                      
+*	You can rename your rodeo or accept the default.  
+*	Put in the location or accept the one given by your GPS(Ensure GPS is activated)
+*	Change the date or leave the current date.  
+*	Enter the number of rounds.  
+
+Setting Up Your Events
+                   
+*	Select the "Events" tab
+*	Accept the default event names or enter the actual event names.  
+*	Enter number of contestants and number of places paid or accept the default.  
+*	NOTE: to add each event you must hit the "+" sign at the end of the row or it will not add the event to your rodeo.  
+*	Once events are added hit "back" and "start rodeo", or hit "save rodeo" if you don't want to start it right away.  
+
+Start Tracking Your Rodeo
+	              
+*	Once you are ready to start your event you can get there from the "Create a rodeo" page by hitting "Start Rodeo" or from the "Look up a Rodeo" tab on the main page and selecting the desired rodeo.  
+*	Once started select the first event
+*	Accept the default contestant name or enter a new one. 
+*	In the "time" or "score" column enter it by simply hitting the box and punching in the number, then hitting "DONE".  **If you do not hit done it will not accept it**
+*	NOTE: For no times you have to enter a time of "99".  
+*	You can turn your device sideways (landscape view) and it will show you what the contestants will need to place in the first or last paid hole for both the round and the average.
+
+Change Default Settings
+                   
+*	If you would like to change any of the default settings go to the main page and hit "Settings".  
+*	There you can change the defaults that automatically come up for time, score, number of rounds, number of contestants and number of paid places.  
+*	Should you have any questions or comments please email help@myrodeoapp.com
+

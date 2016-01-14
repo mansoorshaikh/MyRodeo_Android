@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/innerbg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header1" >
+
+        <Button
+            android:id="@+id/About_Rodeo_Back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/About_Rodeo_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="About My Rodeo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <TextView
+            android:id="@+id/mainTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="The My Rodeo app is an exciting new tool for anyone trying to keep track of the standings, scores, and times at any kind of rodeo event. 
+The My Rodeo app was developed by Joel Dunlap.  While riding bulls up through the college level and working as a bullfighter after that, he was always on the other side of the rodeo.  It wasn’t until his wife Jeni, picked up team roping that he found himself in the stands trying to follow what was going on, who was placed where in the round and average.  It was a near impossible feat to track with out the intervention of the announcer who only gave updates at the end of every round.
+Joel knew there had to be an easier way, so he went to work and developed the My Rodeo app.
+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+    </ScrollView>
+
+</RelativeLayout>

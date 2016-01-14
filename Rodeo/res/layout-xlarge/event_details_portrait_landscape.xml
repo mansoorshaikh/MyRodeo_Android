@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/innerbg" >
+
+    <RelativeLayout
+        android:id="@+id/HeaderrelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/EventDetail_landscape_Title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Event Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/EventDetails_NextRound_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/buttonbg"
+            android:onClick="nextRoundFunction"
+            android:text="Next \n Round"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/EventDetails_Back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buttonbg"
+            android:onClick="prevRoundFunction"
+            android:text="Prev \n Round"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/EventDetails_RoundNo_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HeaderrelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:text="Round - 1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/headingsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EventDetails_RoundNo_textView"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headingsLinearLayout"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/contestantListLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BDDEF9"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+ <RelativeLayout
+        android:id="@+id/BottomRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/CentertextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/CentertextView" >
+
+            <Button
+                android:id="@+id/EventDetails_Sort_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/CenterRighttextView"
+                android:background="@drawable/buttonbg"
+                android:onClick="SortContestantList"
+                android:text="Sort"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/CenterRighttextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/innerbg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header1"
+        android:gravity="clip_vertical" >
+
+        <TextView
+            android:id="@+id/CreateRodeo_Title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Create a Rodeo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/CreateRodeo_Back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:id="@+id/rodeonameTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Rodeo Name"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/CreateRodeo_Name_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rodeonameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_bg"
+            android:imeOptions="actionDone"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="Rodeo-1"
+            android:textSize="40sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/rodeolocationTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CreateRodeo_Name_button"
+            android:layout_marginTop="25dp"
+            android:text="Rodeo Location"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/CreateRodeo_Location_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rodeolocationTextView"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/CreateRodeo_Location_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="80"
+                android:background="@drawable/round_bg"
+                android:clickable="true"
+                android:hint="Location"
+                android:imeOptions="actionDone"
+                android:padding="8dp"
+                android:textSize="40sp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/locationmapButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="@drawable/googlemap_icon" >
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rodeodateTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CreateRodeo_Location_Layout"
+            android:layout_marginTop="10dp"
+            android:text="Rodeo Date"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/CreateRodeo_Date_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rodeodateTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_bg"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Date"
+            android:padding="8dp"
+            android:textSize="40sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/noofroundsTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CreateRodeo_Date_button"
+            android:layout_marginTop="25dp"
+            android:text="Number Of Rounds"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/CreateRodeo_NumberOfEvents_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noofroundsTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_bg"
+            android:hint="Number of Rounds"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="40sp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/CreateRodeo_Events_button"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/CreateRodeo_NumberOfEvents_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/buttonbg"
+            android:text="Events"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CreateRodeo_Events_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/blanktextview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/CreateRodeo_StartRodeo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/blanktextview"
+                android:background="@drawable/buttonbg"
+                android:text="Start Rodeo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/CreateRodeo_SaveRodeo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/blanktextview"
+                android:background="@drawable/buttonbg"
+                android:text="Save Rodeo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <DatePicker
+        android:id="@+id/CreateRodeo_datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

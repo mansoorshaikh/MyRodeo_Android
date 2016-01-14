@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:weightSum="100" >
+
+    <EditText
+        android:id="@+id/List_Events_EventName_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_weight="60"
+        android:background="#BDDEF9"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:imeOptions="actionDone"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" >
+    </EditText>
+
+    <com.mobiwebcode.Rodeo.CustomEditText
+        android:id="@+id/List_Events_Cont_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="20"
+        android:background="#BDDEF9"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="5"
+        android:textColor="#B10F11"
+        android:textColorHint="#B10F11" >
+    </com.mobiwebcode.Rodeo.CustomEditText>
+
+    <com.mobiwebcode.Rodeo.CustomEditText
+        android:id="@+id/List_Events_Plase_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/List_Events_Delete_button"
+        android:layout_toRightOf="@+id/cnterInner"
+        android:layout_weight="20"
+        android:background="#BDDEF9"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="3"
+        android:textColor="#B10F11"
+        android:textColorHint="#B10F11" >
+    </com.mobiwebcode.Rodeo.CustomEditText>
+
+</LinearLayout>

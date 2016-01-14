@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/innerbg" >
+
+   <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header1" >
+
+        <Button
+            android:id="@+id/GettinStarted_Back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/GettinStarted_Title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Getting Started"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1" >
+        <RelativeLayout
+            android:id="@+id/RELLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <TextView
+            android:id="@+id/mainTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:text="''Getting Started''"
+            android:typeface="serif" />
+        
+         <TextView
+            android:id="@+id/mainTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/mainTextView1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="\nCreate a Rodeo\n"
+            android:typeface="serif" />
+          <TextView
+            android:id="@+id/mainTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/mainTextView2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:text="*	You can rename your rodeo or accept the default.\n*	Put in the location or accept the one given by your GPS(Ensure GPS is activated)\n*	Change the date or leave the current date.\n*	Enter the number of rounds.\n"
+            android:typeface="serif" />
+          
+           <TextView
+            android:id="@+id/mainTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/mainTextView3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Setting Up Your Events\n"
+            android:typeface="serif" />
+          <TextView
+            android:id="@+id/mainTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/mainTextView4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:text="*	Select the ''Events'' tab\n*	Accept the default event names or enter the actual event names.\n*	Enter number of contestants and number of places paid or accept the default.\n*	NOTE: to add each event you must hit the ''+'' sign at the end of the row or it will not add the event to your rodeo.\n*	Once events are added hit ''back'' and ''start rodeo'', or hit ''save rodeo'' if you don't want to start it right away."
+            android:typeface="serif" />
+          
+          <TextView
+            android:id="@+id/mainTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/mainTextView5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="\nStart Tracking Your Rodeo\n"
+            android:typeface="serif" />
+          <TextView
+            android:id="@+id/mainTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/mainTextView6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:text="*	Once you are ready to start your event you can get there from the ''Create a rodeo'' page by hitting ''Start Rodeo'' or from the ''Look up a Rodeo'' tab on the main page and selecting the desired rodeo.\n*	Once started select the first event\n*	Accept the default contestant name or enter a new one.\n*	In the ''time'' or ''score'' column enter it by simply hitting the box and punching in the number, then hitting ''DONE''.\n**If you do not hit done it will not accept it**\n*	You can turn your device sideways (landscape view) and it will show you what the contestants will need to place in the first or last paid hole for both the round and the average."
+            android:typeface="serif" />
+          
+          <TextView
+            android:id="@+id/mainTextView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/mainTextView7"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="\nChange Default Settings\n"
+            android:typeface="serif" />
+          <TextView
+            android:id="@+id/mainTextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/mainTextView8"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:text="*	If you would like to change any of the default settings go to the main page and hit ''Settings''.\n*	There you can change the defaults that automatically come up for time, score, number of rounds, number of contestants and number of paid places.\n*	Should you have any questions or comments please email help@myrodeoapp.com"
+            android:typeface="serif" />
+          
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

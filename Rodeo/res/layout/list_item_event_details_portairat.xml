@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_heddings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_heddingsLeft"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/textView" >
+
+            <EditText
+                android:id="@+id/list_item_EvenDetails_Contestants_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/list_item_EventDetails_Rnd_textView"
+                android:background="@android:color/transparent"
+                android:descendantFocusability="afterDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="3dp"
+                android:text="Contestants"
+                android:textColor="@android:color/black"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/list_item_EventDetails_Rnd_textView"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/deviderTextview"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="2"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="Rnd"
+                android:textColor="#B10F11"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/deviderTextview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/list_item_EventDetails_Avg_textView1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/list_item_EventDetails_Time_textView"
+                android:layout_toRightOf="@+id/deviderTextview"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="2"
+                android:text="Average"
+                android:textColor="#B10F11"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/list_item_EventDetails_Time_textView"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:text="Time"
+                android:textColor="#B10F11"
+                android:typeface="serif" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_heddingsRight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/list_item_EvenDetails_Totaltime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:text="Total\nTime"
+                android:textColor="#B10F11"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/list_item_EvenDetails_FirstInRnd_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/list_item_EventDetails_ThirdInRnd_textView"
+                android:layout_toRightOf="@+id/list_item_EvenDetails_Totaltime_textView"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="For 1th\nin Rnd"
+                android:textColor="#B10F11"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/list_item_EventDetails_ThirdInRnd_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:text="For 3th\nin Rnd"
+                android:textColor="#B10F11"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/list_item_EventDetails_FirstInAvg_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/list_item_EventDetails_ThirdInAvg_textView"
+                android:layout_toRightOf="@+id/list_item_EventDetails_ThirdInRnd_textView"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="For 1th\nin Avg"
+                android:textColor="#B10F11"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/list_item_EventDetails_ThirdInAvg_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:text="For 1th\nin Avg"
+                android:textColor="#B10F11"
+                android:typeface="serif"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
